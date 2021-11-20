@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Emprendimiento</title>
+    <link rel="stylesheet" href="css/registro.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn"> <a href="login.html">Volver atras</a></button>
+        </div>
+        <form action="" id="registro" class="input-group" autocomplete="off">
+            <input type="text" class="input-field"
+                   placeholder="Nombre emprendimiento"
+                   name="nombre"
+                   id="nombreEmprendimiento"
+                   required
+                   autofocus
+            >
+            <input type="text" class="input-field"
+                   placeholder="Tiempo del emprendimiento"
+                   name="tiempo"
+                   id="tiempo"
+                   required
+            >
+            <input type="textarea" class="input-field"
+                   placeholder="Descripcion"
+                   name="descripcion"
+                   id="descripcion"
+                   required
+            >
+            <input type="email" class="input-field"
+                   placeholder="Correo de contacto"
+                   name="correo"
+                   id="correo"
+                   required
+            >
+
+            <input type="text" class="input-field"
+                   placeholder="telefono"
+                   name="telefono"
+                   id="telefono"
+                   required
+            >
+
+
+            <a onclick="registrarEmprendimientos()" class="submit">Registrar emprendimiento</a>
+        </form>
+    </div>
+</div>
+
+<script src="JS/registroEmprendimiento.js"></script>
+
+</body>
+</html>

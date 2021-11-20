@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="SweetAlert/dist/sweetalert2.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Registro</title>
+</head>
+<body>
+<div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn"> <a href="login.html">Inicio de sesión</a></button>
+            <button type="button" class="toggle-btn">Registrarse</button>
+        </div>
+        <form action="" id="registro" class="input-group" autocomplete="off">
+            <input type="text" class="input-field"
+                   placeholder="Nombre"
+                   name="nombre"
+                   id="nombre"
+                   required
+                   autofocus
+            >
+            <input type="text" class="input-field"
+                   placeholder="Apellido"
+                   name="apellido"
+                   id="apellido"
+                   required
+            >
+            <input type="email" class="input-field"
+                   placeholder="Correo"
+                   name="correo"
+                   id="correo"
+                   required
+            >
+            <input type="text" class="input-field"
+                   placeholder="Telefono"
+                   name="telefono"
+                   id="telefono"
+                   required
+            >
+
+            <input type="password" class="input-field"
+                   placeholder="Contraseña"
+                   name="contrasena"
+                   id="contrasena"
+                   required
+            >
+
+            <p>¿Qué tipo de usuario soy?</p>
+
+            <div>
+                <input type="radio" id="emprendedor" name="tipo" value=1
+                       >
+                <label for="emprendedor">Emprendedor</label>
+            </div>
+
+            <div>
+                <input type="radio" id="inversionista" name="tipo" value=2>
+                <label for="inversionista">Inversionista</label>
+            </div>
+
+            <a onclick="registrarUsuarios()" class="submit" >Registrarse</a>
+        </form>
+    </div>
+ </div>
+<script src="JS/registrar.js"></script>
+</body>
+<script src="SweetAlert/dist/sweetalert2.all.min.js"></script>
+</html>

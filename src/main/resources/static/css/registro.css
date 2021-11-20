@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(../img/emprendimiento.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.toggle-btn {
+    padding: 10px 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+.toggle-btn {
+    padding: 10px 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top: 0;
+    left: 109px;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #8390A2, #1f8fc3);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.icons{
+    margin: 30px auto;
+    text-align: center;
+
+}
+
+.icons img {
+    width: 30px;
+    margin: 0 12px;
+    box-shadow:0 0 20px 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 15%;
+}
+
+.input-group{
+    top: 100px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.tool{
+    display: none;
+}
+p,
+label {
+    font: 1rem;
+}
+
+input[type="radio"]{
+    display: none;
+}
+form label{
+    color: #0774D9;
+    padding: 5px 15px 5px 51px;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+form label:hover{
+    background: rgba(0,116,217,0.1);
+}
+form label:before{
+    content: '';
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 3px solid #0074d9;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 4px;
+}
+
+form input[type="radio"]:checked + label{
+    padding: 5px 15px;
+    background: #0074D9;
+    border-radius: 2px;
+    color: #fff;
+}
+form input[type="radio"]:checked + label:before{
+    display: none;
+}
+.submit{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #8390A2, #1f8fc3);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+
+}
+
+#registro{
+    left: 50px;
+}
