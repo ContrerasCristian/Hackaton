@@ -17,9 +17,8 @@ async function registrarUsuarios(){
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
-         body: JSON.stringify(datos);
+         body: JSON.stringify(datos)
     });
-       |
 
     alert("Cuenta creada con exito");
     window.location.href = 'login.html'
